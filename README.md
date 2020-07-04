@@ -1,55 +1,29 @@
-# Nano React App Default Javascript Template
+# In It Together 
+## React Coding Challenge: Card Components
 
-The default template project for [nano-react-app](https://github.com/adrianmcli/nano-react-app).
+Thanks for joining our mini coding challenge. [Check out our past work!](https://github.com/In-It-Together?q=challenge) **Follow the instructions below to work alongside us.**
 
-- `npm start` — This will spawn a development server with a default port of `1234`.
-- `npm run build` — This will output a production build in the `dist` directory.
+## Set Up
+*Must have Git CLI installed for this walkthrough.*
+1. To begin clone this repository to your machine.
+    - Navigate to your desired directory in terminal.
+    - Clone the repo by entering `gcl https://github.com/In-It-Together/challenge_2_cards.git`
+    - Navigate into the repo `cd challenge_2_cards`
+1. **Create your own branch**
+    - This step is very important as you'll be working in a repository shared with others.
+    - Run `git checkout -b <YOUR NAME HERE>`
+    - **This is one of the most important steps, pull requests sent to master will be denied.**
+1. Install your dependencies.
+    - Run `npm install` in your terminal.
+1. Run your local server.
+    - Run `npm start` in your terminal.
+    - Open `localhost:1234` in your prefered browser.
+1. Have fun working on your card component!!
 
-## Custom port
-
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
-
-```
-npm start -- -p 3000
-```
-
-Or edit the `start` script directly:
-
-```
-parcel index.html -p 3000
-```
-
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
-
-
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-With Parcel's `--public-url` flag, use the following scripts for deployment:
-
-```
-"scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html --public-url '.'",
-  "predeploy": "rm -rf dist && parcel build index.html --public-url '.'",
-  "deploy": "gh-pages -d dist"
-},
-```
-
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+## After the hackathon.
+1. Double check the work is in a seperate branch.
+1. Create a commit.
+    - `git add .`
+    - `git commit '<Your commit message here>'`
+    - `git push`
+1. We'll add a link to your branch in our readme.

@@ -4,7 +4,7 @@ Thanks for joining our mini coding challenge. [Check out our past work!](https:/
 
 ## Challenge Scope
 
-This challenge will be occurring on July 3rd, 9am - 2:30pm. If you're coming here after the fact, check out people's buttons at the bottom of this readme. Let's build some cards in React!
+This challenge will be occurring on July 4th, 9am - 2:30pm. If you're coming here after the fact, check out people's buttons at the bottom of this readme. Let's build some cards in React!
 
 <img src='https://media.giphy.com/media/xT9DPlAUKTl1GeZjC8/giphy.gif' />
 

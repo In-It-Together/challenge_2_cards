@@ -1,55 +1,57 @@
-# Nano React App Default Javascript Template
+# Challenge 2 - Let's Create Some Cards
 
-The default template project for [nano-react-app](https://github.com/adrianmcli/nano-react-app).
+## Challenge Scope
 
-- `npm start` — This will spawn a development server with a default port of `1234`.
-- `npm run build` — This will output a production build in the `dist` directory.
+This challenge will be occurring on July 3rd, 9am - 2:30pm. If you're coming here after the fact, check out people's buttons at the bottom of this readme. Let's build some cards in React!
 
-## Custom port
+<img src='https://media.giphy.com/media/xT9DPlAUKTl1GeZjC8/giphy.gif' />
 
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
+Cards are used in various places. You might be familiar with cards if you ever shopped online and looked through a catalogue. When we say cards, we're really saying any container of information with similar structured items arranged in a row, column or grid. Saying 'cards' is easier than 'containers of information', so we'll stick with the term cards.
 
-```
-npm start -- -p 3000
-```
+![image info](./images/cards.png)
 
-Or edit the `start` script directly:
+This is a great opportunity to stretch your React muscles. React is all about Components/Composition, and a Card is a perfect candidate to get into the React mindset. Generally the flow of creating cards through React is as follows:
 
-```
-parcel index.html -p 3000
-```
+- Create or Find a source of data that contains the UNIT of information you want. For clothing this might mean your data is an array of objects describing a clothing item (name, price, description etc.), and each object has the same keys. **The boilerplate code has an example data source in data.js**.
 
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
-
-
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-With Parcel's `--public-url` flag, use the following scripts for deployment:
-
-```
-"scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html --public-url '.'",
-  "predeploy": "rm -rf dist && parcel build index.html --public-url '.'",
-  "deploy": "gh-pages -d dist"
-},
+```javascript
+export const boilerPlateData = [
+  {
+    id: 1,
+    name: "Toothpaste",
+    price: 4.44,
+    description: "Fluoride-Flavored Toothpaste, Yum!"
+  },
+  {
+    id: 2,
+    name: "Baseball",
+    price: 7.32,
+    description: "Do not combine with window!"
+  },
 ```
 
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+- Map over the source of data, and take the data in each item and turn them into JSX elements (or a whole other component). **We provided a simple example of this in App.js.**
+
+```javascript
+const generateCardsFromData = collection => {
+  return collection.map(item => {
+    return (
+      <div key={item.id}>
+        <h2>{item.name}</h2>
+        <h4>{item.price}</h4>
+        <p>{item.description}</p>
+      </div>
+    );
+  });
+};
+```
+
+# How To Use This Repo
+
+Feel free to use this repository as a starting point, or create your own! We'll be posting links to the repositories of all the participants Cards below, so definitely come back again after the event is complete to see what other people have built!
+
+If you do use this repo, simple add your components in `./src/components` and use ```npm start``` to view your development build using port 1234.
+
+Thanks for reading, participating, and we can't wait to see what you build!
+
+

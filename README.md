@@ -1,5 +1,7 @@
 # Challenge 2 - Let's Create Some Cards
 
+Thanks for joining our mini coding challenge. [Check out our past work!](https://github.com/In-It-Together?q=challenge) **Follow the instructions below to work alongside us.**
+
 ## Challenge Scope
 
 This challenge will be occurring on July 3rd, 9am - 2:30pm. If you're coming here after the fact, check out people's buttons at the bottom of this readme. Let's build some cards in React!
@@ -60,10 +62,30 @@ export default () => {
 };
 ```
 
-# How To Use This Repo
+## Set Up
+*Must have Git CLI installed for this walkthrough.*
+1. To begin clone this repository to your machine.
+    - Navigate to your desired directory in terminal.
+    - Clone the repo by entering `gcl https://github.com/In-It-Together/challenge_2_cards.git`
+    - Navigate into the repo `cd challenge_2_cards`
+1. **Create your own branch**
+    - This step is very important as you'll be working in a repository shared with others.
+    - Run `git checkout -b <YOUR NAME HERE>`
+    - **This is one of the most important steps, pull requests sent to master will be denied.**
+1. Install your dependencies.
+    - Run `npm install` in your terminal.
+1. Run your local server.
+    - Run `npm start` in your terminal.
+    - Open `localhost:1234` in your prefered browser.
+1. Have fun working on your card component!!
 
-Feel free to use this repository as a starting point, or create your own! We'll be posting links to the repositories of all the participants Cards below, so definitely come back again after the event is complete to see what other people have built!
+## After the hackathon.
+1. Double check the work is in a seperate branch.
+1. Create a commit.
+    - `git add .`
+    - `git commit '<Your commit message here>'`
+    - `git push`
+1. We'll add a link to your branch in our readme.
 
-If you do use this repo, simple add your components in `./src/components` and use `npm start` to view your development build using port 1234.
 
-Thanks for reading, participating, and we can't wait to see what you build!
+

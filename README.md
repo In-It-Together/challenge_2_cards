@@ -8,6 +8,8 @@ This challenge will be occurring on July 3rd, 9am - 2:30pm. If you're coming her
 
 <img src='https://media.giphy.com/media/xT9DPlAUKTl1GeZjC8/giphy.gif' />
 
+# General Overview Of Cards
+
 Cards are used in various places. You might be familiar with cards if you ever shopped online and looked through a catalogue. When we say cards, we're really saying any container of information with similar structured items arranged in a row, column or grid. Saying 'cards' is easier than 'containers of information', so we'll stick with the term cards.
 
 ![image info](./images/cards.png)

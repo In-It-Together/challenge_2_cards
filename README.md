@@ -28,21 +28,35 @@ export const boilerPlateData = [
     price: 7.32,
     description: "Do not combine with window!"
   },
+  {
+    id: 3,
+    name: "Sunglasses",
+    price: 65.0,
+    description: "What is the sun? I don't know."
+  }
+];
 ```
 
 - Map over the source of data, and take the data in each item and turn them into JSX elements (or a whole other component). **We provided a simple example of this in App.js.**
 
 ```javascript
-const generateCardsFromData = collection => {
-  return collection.map(item => {
-    return (
-      <div key={item.id}>
-        <h2>{item.name}</h2>
-        <h4>{item.price}</h4>
-        <p>{item.description}</p>
-      </div>
-    );
-  });
+import React from "react";
+import { boilerPlateData } from "./data.js";
+
+export default () => {
+  const generateCardsFromData = collection => {
+    return collection.map(item => {
+      return (
+        <div key={item.id}>
+          <h2>{item.name}</h2>
+          <h4>{item.price}</h4>
+          <p>{item.description}</p>
+        </div>
+      );
+    });
+  };
+
+  return <>{generateCardsFromData(boilerPlateData)}</>;
 };
 ```
 
@@ -50,8 +64,6 @@ const generateCardsFromData = collection => {
 
 Feel free to use this repository as a starting point, or create your own! We'll be posting links to the repositories of all the participants Cards below, so definitely come back again after the event is complete to see what other people have built!
 
-If you do use this repo, simple add your components in `./src/components` and use ```npm start``` to view your development build using port 1234.
+If you do use this repo, simple add your components in `./src/components` and use `npm start` to view your development build using port 1234.
 
 Thanks for reading, participating, and we can't wait to see what you build!
-
-

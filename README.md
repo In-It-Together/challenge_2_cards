@@ -89,5 +89,6 @@ export default () => {
     - `git push`
 1. We'll add a link to your branch in our readme.
 
-
+## Participants
+Shawn Huang Fernandes (Fortune Teller Cards): https://github.com/shawnhuangfernandes/challenge2-cards
 
